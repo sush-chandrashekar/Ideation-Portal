@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_snc_ideation_por_idea_votes</description>
+        <name>x_snc_ideation_por_idea_votes</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2017-12-19 23:38:45</sys_created_on>
+        <sys_id>ae415ac3db0fc30000e4f5861d9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ideation_por_idea_votes</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sys_security_acl_ae415ac3db0fc30000e4f5861d9619c2</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2017-12-19 23:38:45</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

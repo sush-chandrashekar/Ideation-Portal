@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Idea Votes" max_length="40" name="x_snc_ideation_por_idea_votes" type="collection">
+        <element label="Idea" max_length="32" name="idea" reference="idea" type="reference"/>
+        <element label="Name" max_length="32" name="name" reference="sys_user" type="reference"/>
+        <element label="Voted" max_length="40" name="voted" type="boolean"/>
+        <index name="index">
+            <element name="idea"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

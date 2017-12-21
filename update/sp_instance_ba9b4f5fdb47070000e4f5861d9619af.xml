@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>20</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">857b8f5fdb47070000e4f5861d961901</sp_column>
+        <sp_widget display_value="SC Catalog Item Deprecated">0fd6a6f247230200ba13a5554ee490b3</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2017-12-20 22:32:02</sys_created_on>
+        <sys_id>ba9b4f5fdb47070000e4f5861d9619af</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sp_instance_ba9b4f5fdb47070000e4f5861d9619af</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2017-12-20 22:36:30</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"show_add_cart_button": {
+		"value": "",
+		"displayValue": ""
+	},
+	"url": {
+		"value": "",
+		"displayValue": ""
+	},
+	"page": {
+		"value": "c148edf0134fc70083a7bd522244b0e7",
+		"displayValue": "ideation_home"
+	},
+	"table": {
+		"value": "",
+		"displayValue": ""
+	},
+	"auto_redirect": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba9b4f5fdb47070000e4f5861d9619af"/>
+</record_update>

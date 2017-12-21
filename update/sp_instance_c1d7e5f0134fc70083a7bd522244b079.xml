@@ -23,13 +23,11 @@
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>sush.chan</sys_created_by>
         <sys_created_on>2017-12-12 20:51:17</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>c1d7e5f0134fc70083a7bd522244b079</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Welcome to Ideation Portal</sys_name>
         <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
         <sys_update_name>sp_instance_c1d7e5f0134fc70083a7bd522244b079</sys_update_name>
         <sys_updated_by>sush.chan</sys_updated_by>
@@ -43,4 +41,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=c1d7e5f0134fc70083a7bd522244b079"/>
 </record_update>

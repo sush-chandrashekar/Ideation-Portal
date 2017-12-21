@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ideaBannerCtrl() {
+    /* widget controller */
+    var c = this;
+
+    c.getPictureStyle = function() {
+        return {
+            "background-image": 'url(' + c.options.bg_image + ')',
+            "background-position": c.options.align_image + ''
+        };
+
+    };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.image-positioning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    height: 220px;
+    margin-bottom: 30px;
+}
+
+.text-block {
+    text-align: center;
+    .heading {
+        font-size: 36px;
+        margin-top: 0px;
+        font-weight: 600;
+    }
+    .sub-heading {
+        font-size: 18px;
+    }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>idea-banner</id>
+        <internal>false</internal>
+        <link/>
+        <name>Idea Banner</name>
+        <option_schema>[{"name":"bg_image","section":"other","default_value":"search-bg.png","label":"bg image","type":"string"},{"name":"align_image","section":"other","label":"Align Image","type":"choice","choices":[{"label":"center","value":"center"},{"label":"bottom","value":"bottom"},{"label":"left","value":"left"},{"label":"right","value":"right"},{"label":"top","value":"top"}]},{"name":"heading","section":"other","label":"Heading","type":"string"},{"name":"heading_text_color","section":"other","label":"Heading Text Color","type":"string"},{"name":"sub_heading","section":"other","label":"Sub Heading","type":"string"},{"name":"sub_heading_text_color","section":"other","label":"Sub Heading Text Color","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+    data.userName = gs.getUserDisplayName().split(' ');
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2017-12-15 18:36:15</sys_created_on>
+        <sys_id>88a5ac71db43430000e4f5861d961976</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Idea Banner</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sp_widget_88a5ac71db43430000e4f5861d961976</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2017-12-21 20:22:10</sys_updated_on>
+        <template><![CDATA[<div class="image-positioning row hidden-xs" ng-style="c.getPictureStyle()">
+    <div class="text-block">
+        <h2 ng-style="{'color': c.options.heading_text_color}" class="heading">Hi {{::c.data.userName[0]}}, {{::c.options.heading}}</h2>
+        <p ng-style="{'color': c.options.sub_heading_text_color}" class="sub-heading">{{::c.options.sub_heading}}</p>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

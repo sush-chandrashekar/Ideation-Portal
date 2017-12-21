@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ideaSidebarCtrl($location, $scope, $rootScope, $window) {
+    /* widget controller */
+    var c = this;
+
+    c.$onInit = function() {
+        c.selectedFilter = 'all';
+    }
+
+    //Submit an idea button to take users to a new page with record producer
+    c.submitIdea = function() {
+        $location.search({
+            id: 'idea_create',
+            sys_id: '97948f5bdb47070000e4f5861d96190e'
+        });
+        //$window.location.href = "/ideas?id=idea_create&table=idea&sys_id=-1";
+    };
+
+    //Broadcast event based on filter links. This event is caught in Idea List widget
+    c.filterClicked = function(type) {
+        c.selectedFilter = type;
+        $rootScope.$broadcast('filterClicked', type);
+    }
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.idea-sidebar {
+    padding: 10px;
+    /* border-right: 1px solid #ddd; */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    .new-idea {
+        padding: 8px 20px;
+        width: 90%;
+        border: 2px solid $brand-primary;
+        border-radius: 6px;
+        color: $brand-primary;
+        display: block;
+        margin-left: auto;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: auto;
+    }
+    .filter-links {
+        color: $brand-primary;
+        display: block;
+        margin-left: auto;
+        width: 90%;
+        font-weight: bold;
+        font-size: 16px;
+        margin-right: auto;
+        padding-top: 15px;
+        &amp;:hover {
+            text-decoration: underline;
+        }
+        &amp;.active {
+            text-decoration: underline;
+        }
+    }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>idea-sidebar</id>
+        <internal>false</internal>
+        <link/>
+        <name>Idea Sidebar</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2017-12-15 18:36:36</sys_created_on>
+        <sys_id>bdb5247ddb03430000e4f5861d961939</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>Idea Sidebar</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sp_widget_bdb5247ddb03430000e4f5861d961939</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2017-12-21 20:21:58</sys_updated_on>
+        <template><![CDATA[<div class="idea-sidebar">
+
+    <button ng-click="c.submitIdea()" class="new-idea">Add an Idea</button>
+    <a class="filter-links" ng-class="{'active': c.selectedFilter == 'all'}" href="" ng-click="c.filterClicked('all')">All Ideas</a>
+    <a class="filter-links" ng-class="{'active': c.selectedFilter == 'my'}" href="" ng-click="c.filterClicked('my')">My Ideas</a>
+    <a class="filter-links" ng-class="{'active': c.selectedFilter == 'myvotes'}" href="" ng-click="c.filterClicked('myvotes')">My Votes</a>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

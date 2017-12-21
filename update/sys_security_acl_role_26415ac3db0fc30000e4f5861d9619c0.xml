@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2017-12-19 23:38:45</sys_created_on>
+        <sys_id>26415ac3db0fc30000e4f5861d9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ideation_por_idea_votes.x_snc_ideation_por.idea_votes_user</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_security_acl display_value="x_snc_ideation_por_idea_votes">1e415ac3db0fc30000e4f5861d9619bd</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_26415ac3db0fc30000e4f5861d9619c0</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2017-12-19 23:38:45</sys_updated_on>
+        <sys_user_role display_value="x_snc_ideation_por.idea_votes_user" name="x_snc_ideation_por.idea_votes_user">1a41de83db0fc30000e4f5861d9619ec</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

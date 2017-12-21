@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_snc_ideation_por.idea_votes_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>idea_votes_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2017-12-19 23:38:44</sys_created_on>
+        <sys_id>1a41de83db0fc30000e4f5861d9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ideation_por.idea_votes_user</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sys_user_role_1a41de83db0fc30000e4f5861d9619ec</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2017-12-19 23:38:44</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>voteidea</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var queryParams = request.queryParams; 
+	var ideaSysid = queryParams.idea.toString();
+	var voteObj = {};
+	var voteGr = new GlideRecord('x_snc_ideation_por_idea_votes');
+		voteGr.addQuery('idea',ideaSysid);
+		voteGr.addQuery('name',gs.getUserID());
+		voteGr.query();
+		if(voteGr.next()){
+			var vote = (voteGr.getDisplayValue('voted') === 'true');
+			voteGr.voted = !vote;
+			voteGr.update();
+		}else{
+			gs.info('ideaSysid not found ');
+			gs.info('ideaSysid '+ideaSysid);
+			voteGlideRec  = new GlideRecord('x_snc_ideation_por_idea_votes');
+			voteGlideRec.initialize(); 
+			voteGlideRec.name = gs.getUserID(); 
+			voteGlideRec.idea = ideaSysid; 
+			voteGlideRec.voted = true;
+			voteGlideRec.insert();
+			
+		}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_ideation_por/ideas/voteidea</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/voteidea</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2017-12-20 05:13:36</sys_created_on>
+        <sys_id>9ced938bdb8fc30000e4f5861d961994</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>voteidea</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sys_ws_operation_9ced938bdb8fc30000e4f5861d961994</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2017-12-20 18:47:08</sys_updated_on>
+        <web_service_definition display_value="Ideas">c3f15207db0fc30000e4f5861d961967</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

@@ -40,13 +40,11 @@ $text-muted: #979797;
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>sush.chan</sys_created_by>
         <sys_created_on>2017-12-12 20:52:40</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>5508e9f0134fc70083a7bd522244b00d</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Ideation Portal</sys_name>
         <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
         <sys_update_name>sp_portal_5508e9f0134fc70083a7bd522244b00d</sys_update_name>
         <sys_updated_by>sush.chan</sys_updated_by>
@@ -55,12 +53,12 @@ $text-muted: #979797;
         <title>Ideation Portal</title>
         <url_suffix>ideas</url_suffix>
     </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=5508e9f0134fc70083a7bd522244b00d"/>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color>#0</average_image_color>
         <chunk_size_bytes>734003</chunk_size_bytes>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
-        <encryption_context/>
         <file_name>logo</file_name>
         <image_height>100</image_height>
         <image_width>910</image_width>
