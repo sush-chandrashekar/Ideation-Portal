@@ -28,36 +28,48 @@
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.idea-sidebar {
-    padding: 10px;
-    /* border-right: 1px solid #ddd; */
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    padding: 20px 0px;
+    background-color: #F3F2F2;
     .new-idea {
-        padding: 8px 20px;
-        width: 90%;
-        border: 2px solid $brand-primary;
-        border-radius: 6px;
-        color: $brand-primary;
+        padding: 15px 20px;
+        width: 85%;
+        margin-bottom: 30px;
+        background-color: $brand-primary;
+        color: #fff;
         display: block;
         margin-left: auto;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
         margin-right: auto;
     }
     .filter-links {
-        color: $brand-primary;
+        color: #303030;
         display: block;
-        margin-left: auto;
-        width: 90%;
-        font-weight: bold;
-        font-size: 16px;
-        margin-right: auto;
+        height: 55px;
+        font-size: 18px;
+        font-weight: 300;
         padding-top: 15px;
-        &amp;:hover {
-            text-decoration: underline;
-        }
+        padding-left: 20px;
+        position: relative;
+        width: 100%;
+        padding-bottom: 15px;
         &amp;.active {
-            text-decoration: underline;
+            background-color: #E6E5E5;
+            font-weight: normal;
+            &amp;:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 100%;
+                top: 50%;
+                margin-top: -27px;
+                width: 0;
+                height: 0;
+                border-top: 27px solid transparent;
+                border-right: 27px solid transparent;
+                border-bottom: 27px solid transparent;
+                border-left: 16px solid#E6E5E5;
+            }
         }
     }
 }</css>
@@ -84,14 +96,14 @@
         <sys_created_by>sush.chan</sys_created_by>
         <sys_created_on>2017-12-15 18:36:36</sys_created_on>
         <sys_id>bdb5247ddb03430000e4f5861d961939</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>89</sys_mod_count>
         <sys_name>Idea Sidebar</sys_name>
         <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
         <sys_update_name>sp_widget_bdb5247ddb03430000e4f5861d961939</sys_update_name>
         <sys_updated_by>sush.chan</sys_updated_by>
-        <sys_updated_on>2017-12-21 20:21:58</sys_updated_on>
+        <sys_updated_on>2017-12-27 21:23:39</sys_updated_on>
         <template><![CDATA[<div class="idea-sidebar">
 
     <button ng-click="c.submitIdea()" class="new-idea">Add an Idea</button>

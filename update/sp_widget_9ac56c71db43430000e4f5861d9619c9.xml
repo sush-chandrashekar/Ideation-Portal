@@ -17,6 +17,9 @@
 
     //Record watcher to keep lookout for votes
     spUtil.recordWatch($scope, "x_snc_ideation_por_idea_votes", "", function(name, data) {
+        console.log("in record watcher ");
+        console.log(name);
+        debugger;
         var ideaSysid = '';
         var voteValue = name.data.record.voted.value === 'true';
         if (name.data.operation == 'update') {
@@ -39,6 +42,7 @@
 
     //Method to capture idea votes. makes a REST call
     c.vote = function(idea) {
+        debugger;
         if (idea.openedBySysid != c.currentUsedID) {
             $http.get('/api/x_snc_ideation_por/ideas/voteidea?idea=' + idea.sys_id, {
                 headers: {
@@ -85,7 +89,7 @@
             ideas[index].createdOnDate = moment(ideas[index].createdOnDate).fromNow();
         }
         return ideas;
-    }
+    };
 
 
     //Event caught based on filter selected in sidebar
@@ -94,57 +98,67 @@
     });
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css>.ideas-list {
-    display: flex;
-    padding: 0px 10px 20px 10px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-    .vote {
-        width: 60px;
-        text-align: center;
-        color: $brand-primary;
-        .vote-wrapper {
-            border: 1px solid $brand-primary;
-            border-radius: 6px;
-            font-weight: bold;
-            i {
-                margin: 10px 0px;
+        <css>.list-div {
+    margin-left: 35px;
+    .ideas-list {
+        display: flex;
+        padding: 0px 10px 25px 10px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 25px;
+        .vote {
+            width: 70px;
+            text-align: center;
+            color: $brand-primary;
+            .vote-wrapper {
+                border: 1px solid $brand-primary;
+                font-weight: bold;
+                i {
+                    margin: 10px 0px;
+                }
+                .count {
+                    margin: 0px;
+                    color: $brand-primary;
+                    border-top: 1px solid $brand-primary;
+                    font-size: 18px;
+                    font-weight: 300;
+                    &amp;.voted {
+                        background: $brand-primary;
+                        color: #fff;
+                    }
+                }
             }
-            .count {
-                margin: 0px;
-                color: $brand-primary;
-                border-top: 1px solid $brand-primary;
-                &amp;.voted {
-                    background: $brand-primary;
-                    color: #fff;
+        }
+        .idea-details {
+            padding-left: 30px;
+            .title {
+                font-size: 24px;
+                font-weight: 300;
+                color: #000;
+            }
+            .description {
+                font-size: 17px;
+                color: #000;
+                font-weight: 300;
+            }
+            .created {
+                display: flex;
+                align-items: center;
+                .text {
+                    margin-left: 10px;
+                    margin-bottom: 0px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #908d8d;
                 }
             }
         }
     }
-    .idea-details {
-        padding-left: 20px;
+    .no-data {
+        text-align: center;
         .title {
             font-size: 18px;
             font-weight: bold;
         }
-        .description {}
-        .created {
-            display: flex;
-            align-items: center;
-            .text {
-                margin-left: 10px;
-                margin-bottom: 0px;
-                font-size: 12px;
-            }
-        }
-    }
-}
-
-.no-data {
-    text-align: center;
-    .title {
-        font-size: 18px;
-        font-weight: bold;
     }
 }
 
@@ -182,33 +196,35 @@
         <sys_created_by>sush.chan</sys_created_by>
         <sys_created_on>2017-12-15 18:36:53</sys_created_on>
         <sys_id>9ac56c71db43430000e4f5861d9619c9</sys_id>
-        <sys_mod_count>246</sys_mod_count>
+        <sys_mod_count>266</sys_mod_count>
         <sys_name>Idea List</sys_name>
         <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
         <sys_update_name>sp_widget_9ac56c71db43430000e4f5861d9619c9</sys_update_name>
         <sys_updated_by>sush.chan</sys_updated_by>
-        <sys_updated_on>2017-12-21 20:24:37</sys_updated_on>
-        <template><![CDATA[<div class="ideas-list" ng-repeat="idea in c.ideas">
-    <div class="vote">
-        <div class="vote-wrapper" ng-click="c.vote(idea)">
-            <i ng-if="!idea.iVoted" class="fa fa-2x fa-heart-o animated swing" aria-hidden="true"></i>
-            <i ng-if="idea.iVoted" class="fa fa-2x fa-heart animated rubberBand" aria-hidden="true"></i>
-            <p ng-class="{'voted': idea.iVoted}" class="count">{{idea.voteCount}}</p>
+        <sys_updated_on>2017-12-27 21:43:56</sys_updated_on>
+        <template><![CDATA[<div class="list-div">
+    <div class="ideas-list" ng-repeat="idea in c.ideas">
+        <div class="vote">
+            <div class="vote-wrapper" ng-click="c.vote(idea)">
+                <i ng-if="!idea.iVoted" class="fa fa-2x fa-heart-o animated swing" aria-hidden="true"></i>
+                <i ng-if="idea.iVoted" class="fa fa-2x fa-heart animated rubberBand" aria-hidden="true"></i>
+                <p ng-class="{'voted': idea.iVoted}" class="count">{{idea.voteCount}}</p>
+            </div>
+        </div>
+        <div class="idea-details">
+            <p class="title">{{idea.title}}</p>
+            <p class="description">{{idea.description}}</p>
+            <div class="created">
+                <sn-avatar class="avatar-small-medium" show-presence="false" primary="idea.openedBySysid" />
+                <p class="text">Created by {{idea.openedByName}} {{idea.createdOnDate}}</p>
+            </div>
         </div>
     </div>
-    <div class="idea-details">
-        <p class="title">{{idea.title}}</p>
-        <p class="description">{{idea.description}}</p>
-        <div class="created">
-            <sn-avatar class="avatar-small-medium" show-presence="false" primary="idea.openedBySysid" />
-            <p class="text">Created by {{idea.openedByName}} {{idea.createdOnDate}}</p>
-        </div>
+    <div class="no-data" ng-if="c.ideas.length == 0">
+        <p class="title">No ideas found</p>
     </div>
-</div>
-<div class="no-data" ng-if="c.ideas.length == 0">
-    <p class="title">No ideas found</p>
 </div>]]></template>
     </sp_widget>
 </record_update>
