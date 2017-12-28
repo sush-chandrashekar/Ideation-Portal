@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_theme">
     <sp_theme action="INSERT_OR_UPDATE">
-        <css_variables>$sp-logo-margin-x: 15px !default;&#13;
-$sp-tagline-color: $text-color !default;&#13;
-$navbar-inverse-bg: #000 !default;&#13;
-$navbar-inverse-link-color: #bdc0c4 !default;&#13;
-$navbar-inverse-link-hover-color: #ffffff !default;&#13;
-$body-bg: #f0f3f4 !default;&#13;
+        <css_variables>&#13;
 $brand-primary:#B93637;&#13;
 .btn-primary {&#13;
     background-color: $brand-primary !important;&#13;
@@ -32,13 +27,13 @@ body .padding-top {&#13;
         <sys_created_by>sush.chan</sys_created_by>
         <sys_created_on>2017-12-12 22:58:49</sys_created_on>
         <sys_id>05054ab8138fc70083a7bd522244b0b4</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Ideation</sys_name>
         <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
         <sys_update_name>sp_theme_05054ab8138fc70083a7bd522244b0b4</sys_update_name>
         <sys_updated_by>sush.chan</sys_updated_by>
-        <sys_updated_on>2017-12-27 21:46:57</sys_updated_on>
+        <sys_updated_on>2017-12-28 19:16:25</sys_updated_on>
     </sp_theme>
 </record_update>
