@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="f0d6a3b0dba3130094407f6bbf961925" sys_domain="global" table="x_snc_ideation_por_instance_of_banner" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3cd6a3b0dba3130094407f6bbf961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ideation_por_instance_of_banner" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="0ce54027b33232007a6de81816a8dca1">f0d6a3b0dba3130094407f6bbf961925</sys_ui_form>
+            <sys_ui_section caption="Data" display_value="Data" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="0ce54027b33232007a6de81816a8dca1">b8d6a3b0dba3130094407f6bbf961928</sys_ui_section>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4d6a3b0dba3130094407f6bbf961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ideation_por_instance_of_banner" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="0ce54027b33232007a6de81816a8dca1">f0d6a3b0dba3130094407f6bbf961925</sys_ui_form>
+            <sys_ui_section caption="Presentation" display_value="Presentation" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="0ce54027b33232007a6de81816a8dca1">3cd6a3b0dba3130094407f6bbf961926</sys_ui_section>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcd6a3b0dba3130094407f6bbf96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ideation_por_instance_of_banner" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="0ce54027b33232007a6de81816a8dca1">f0d6a3b0dba3130094407f6bbf961925</sys_ui_form>
+            <sys_ui_section caption="Behavior" display_value="Behavior" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="0ce54027b33232007a6de81816a8dca1">30d6a3b0dba3130094407f6bbf96192a</sys_ui_section>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_ideation_por_instance_of_banner</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f0d6a3b0dba3130094407f6bbf961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_ideation_por_instance_of_banner</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+            <sys_update_name>sys_ui_form_sections_f0d6a3b0dba3130094407f6bbf961925</sys_update_name>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="SP Instance Config" name="sp_instance_config">0ce54027b33232007a6de81816a8dca1</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

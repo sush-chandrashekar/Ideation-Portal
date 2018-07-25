@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="Idea Service">a2cf5c4ddbe3130094407f6bbf961921</sp_dependency>
+        <sp_widget display_value="Idea List">9ac56c71db43430000e4f5861d9619c9</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2018-07-25 02:58:21</sys_created_on>
+        <sys_id>06ff9c0ddbe3130094407f6bbf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Idea Service.Idea List</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_06ff9c0ddbe3130094407f6bbf961988</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2018-07-25 02:58:21</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

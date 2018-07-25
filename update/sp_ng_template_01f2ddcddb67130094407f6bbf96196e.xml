@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>sush-sp-typeahead-popup.html</id>
+        <sp_widget/>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2018-07-25 06:41:39</sys_created_on>
+        <sys_id>01f2ddcddb67130094407f6bbf96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sush-sp-typeahead-popup.html</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sp_ng_template_01f2ddcddb67130094407f6bbf96196e</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2018-07-25 06:41:39</sys_updated_on>
+        <template><![CDATA[<ul class="dropdown-menu" ng-show="isOpen() && !moveInProgress" ng-style="{top: position().top+'px', left: position().left+'px'}" role="listbox" aria-hidden="{{!isOpen()}}">
+    <li role='option' aria-hidden='true' style='display: none'></li>    
+  	<li ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }" 
+        ng-mouseenter="selectActive($index)" 
+        ng-click="selectMatch($index, $event)" 
+        role="option" id="{{::match.id}}">
+        <div uib-typeahead-match index="$index" match="match" query="query" template-url="templateUrl"></div>
+    </li>
+</ul>]]></template>
+    </sp_ng_template>
+</record_update>

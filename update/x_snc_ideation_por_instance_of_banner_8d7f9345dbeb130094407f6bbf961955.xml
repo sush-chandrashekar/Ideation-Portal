@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_ideation_por_instance_of_banner">
+    <x_snc_ideation_por_instance_of_banner action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <align_image/>
+        <background_image>e5bf1745dbeb130094407f6bbf96190f.iix?t=m</background_image>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <heading>Welcome to ntt portal</heading>
+        <heading_text_color>#f95050</heading_text_color>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">c0f8a574134fc70083a7bd522244b0d5</sp_column>
+        <sp_widget display_value="Idea Banner">88a5ac71db43430000e4f5861d961976</sp_widget>
+        <sub_heading>idea portal</sub_heading>
+        <sub_heading_text_color>#ffffff</sub_heading_text_color>
+        <sys_class_name>x_snc_ideation_por_instance_of_banner</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2018-07-25 16:54:57</sys_created_on>
+        <sys_id>8d7f9345dbeb130094407f6bbf961955</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>x_snc_ideation_por_instance_of_banner_8d7f9345dbeb130094407f6bbf961955</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2018-07-25 16:56:44</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </x_snc_ideation_por_instance_of_banner>
+    <sys_translated_text action="delete_multiple" query="documentkey=8d7f9345dbeb130094407f6bbf961955"/>
+</record_update>

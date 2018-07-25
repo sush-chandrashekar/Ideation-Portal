@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sp_instance" label="Instance of banner" max_length="40" name="x_snc_ideation_por_instance_of_banner" type="collection">
+        <element choice="1" label="Align image" max_length="40" name="align_image" type="choice">
+            <choice/>
+        </element>
+        <element label="Background Image" max_length="40" name="background_image" type="user_image"/>
+        <element label="Heading" max_length="40" name="heading" type="string"/>
+        <element label="Heading Text Color" max_length="40" name="heading_text_color" type="color"/>
+        <element label="Sub Heading" max_length="40" name="sub_heading" type="string"/>
+        <element label="Sub Heading Text Color" max_length="40" name="sub_heading_text_color" type="color"/>
+    </element>
+</database>

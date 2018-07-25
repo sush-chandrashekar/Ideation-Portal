@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="a4d66770dba3130094407f6bbf96196e" sys_domain="global" table="x_snc_ideation_por_instance_of_banner" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>30d6a3b0dba3130094407f6bbf961922</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ideation_por_instance_of_banner" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="Default view">a4d66770dba3130094407f6bbf96196e</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="Default view">b4d66770dba3130094407f6bbf961972</sys_ui_section>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcd6a3b0dba3130094407f6bbf961924</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ideation_por_instance_of_banner" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="Default view">a4d66770dba3130094407f6bbf96196e</sys_ui_form>
+            <sys_ui_section caption="Color, Placement, Size" display_value="Color, Placement, Size" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="Default view">34d6a3b0dba3130094407f6bbf961922</sys_ui_section>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3cd66770dba3130094407f6bbf961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ideation_por_instance_of_banner" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="Default view">a4d66770dba3130094407f6bbf96196e</sys_ui_form>
+            <sys_ui_section caption="Widget" display_value="Widget" name="x_snc_ideation_por_instance_of_banner" sys_domain="global" view="Default view">38d66770dba3130094407f6bbf961970</sys_ui_section>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_ideation_por_instance_of_banner</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>sush.chan</sys_created_by>
+            <sys_created_on>2018-07-24 22:48:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a4d66770dba3130094407f6bbf96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_ideation_por_instance_of_banner</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+            <sys_update_name>sys_ui_form_sections_a4d66770dba3130094407f6bbf96196e</sys_update_name>
+            <sys_updated_by>sush.chan</sys_updated_by>
+            <sys_updated_on>2018-07-24 22:48:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

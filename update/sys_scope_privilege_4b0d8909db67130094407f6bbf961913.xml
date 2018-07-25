@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2018-07-25 06:15:18</sys_created_on>
+        <sys_id>4b0d8909db67130094407f6bbf961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScriptableRESTResponse.getStatusCode</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sys_scope_privilege_4b0d8909db67130094407f6bbf961913</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2018-07-25 06:15:18</sys_updated_on>
+        <target_name>ScriptableRESTResponse.getStatusCode</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

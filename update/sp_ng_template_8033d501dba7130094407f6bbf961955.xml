@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>sush-sp-typeahead.html</id>
+        <sp_widget/>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2018-07-25 06:42:18</sys_created_on>
+        <sys_id>8033d501dba7130094407f6bbf961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sush-sp-typeahead.html</sys_name>
+        <sys_package display_value="Ideation Portal" source="x_snc_ideation_por">8e719a1e13be430083a7bd522244b0e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ideation Portal">8e719a1e13be430083a7bd522244b0e2</sys_scope>
+        <sys_update_name>sp_ng_template_8033d501dba7130094407f6bbf961955</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2018-07-25 06:42:18</sys_updated_on>
+        <template><![CDATA[<a class="ta-item" ng-href="{{match.model.target != '_blank' ? match.model.url : ''}}" target="{{match.model.target}}">
+  <div ng-if="!match.model.templateID">
+    <i ng-class="'ta-icon fa fa-{{match.model.glyph}}'" ng-if="match.model.glyph"></i>
+    <span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+  </div>
+  <div ng-if="match.model.templateID" ng-include="match.model.templateID"></div>
+</a>]]></template>
+    </sp_ng_template>
+</record_update>
